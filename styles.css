@@ -5,12 +5,12 @@
 
     /* Primary */
 
-    --Pale-blue: hsl(225, 100%, 94%);
+    --Pale-blue: #e0e8ff;
     --Bright-blue: hsl(245, 75%, 52%);
 
     /* Neutral */
 
-    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Very-pale-blue: #f5f7ff;
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
 
@@ -18,7 +18,7 @@
 
     --fs-paragraph: 1rem;
 
-    
+
 }
 
 *,
@@ -37,6 +37,31 @@ svg {
     display: block;
     max-width: 100%;
 }
-p{
+
+p {
     font-size: var(--fs-paragraph) !important;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background:
+        url('./images/pattern-background-desktop.svg') no-repeat top center,
+        /* SVG at the top */
+        white;
+    /* Solid color for the bottom half */
+    background-size: 100% auto;
+    /* Ensure the SVG spans the full width */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background:
+            url('./images/pattern-background-mobile.svg') no-repeat top center,
+            /* SVG for mobile */
+            white;
+        /* Solid color for the bottom half */
+        background-size: 100% auto;
+        /* Ensure the mobile SVG spans the full width */
+    }
 }
