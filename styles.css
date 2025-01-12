@@ -82,6 +82,10 @@ body {
     max-width: 450px;
 }
 
+.card-body {
+    padding: 2.5rem 3rem;
+}
+
 .title {
     text-align: center;
 }
@@ -103,7 +107,7 @@ body {
 }
 
 button {
-    width: 400px;
+    width: 100%;
     padding: 1rem 2rem;
     border-radius: 16px;
     font-weight: 800;
